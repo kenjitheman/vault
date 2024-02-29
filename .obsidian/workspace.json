@@ -1,0 +1,147 @@
+{
+  "main": {
+    "id": "787eaf3420c9dce2",
+    "type": "split",
+    "children": [
+      {
+        "id": "e13d6e9a231e45bb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d9cd42418eae7779",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "seadclub/presentations/zig.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "248c4a0fcb55acd9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1a4366c1d4b4c9b5",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7d6fc3bff1489cf6",
+    "type": "split",
+    "children": [
+      {
+        "id": "acd7d1a24961bc55",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6d32d248744121ae",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b5d23b5fe2d18ddf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "16c56d6878de8272",
+    "type": "split",
+    "children": [
+      {
+        "id": "bd935625576fbfca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "743582d840e69ed0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "seadclub/presentations/zig.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6ebd106e355b7a44",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2c91de7e606d11b1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "seadclub/presentations/zig.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "obsidian-advanced-slides:Show Slide Preview": false
+    }
+  },
+  "active": "1a4366c1d4b4c9b5",
+  "lastOpenFiles": [
+    "seadclub/presentations/zig.md~",
+    "seadclub",
+    "lab-1_Nesterenko-Dmytro_TCR-14.md",
+    "Pasted image 20240227223555.png",
+    "Pasted image 20240227223805.png",
+    "uni/asd",
+    "uni",
+    "Welcome.md"
+  ]
+}
