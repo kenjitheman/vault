@@ -6,6 +6,7 @@
       {
         "id": "e13d6e9a231e45bb",
         "type": "tabs",
+        "dimension": 52.90404040404041,
         "children": [
           {
             "id": "d9cd42418eae7779",
@@ -23,11 +24,12 @@
         ]
       },
       {
-        "id": "248c4a0fcb55acd9",
+        "id": "78a731534887792b",
         "type": "tabs",
+        "dimension": 47.0959595959596,
         "children": [
           {
-            "id": "1a4366c1d4b4c9b5",
+            "id": "7fc1d09e668bb491",
             "type": "leaf",
             "state": {
               "type": "reveal-preview-view",
@@ -77,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 237.50043487548828
   },
   "right": {
     "id": "16c56d6878de8272",
@@ -133,7 +135,7 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "1a4366c1d4b4c9b5",
+  "active": "d9cd42418eae7779",
   "lastOpenFiles": [
     "seadclub/presentations/zig.md~",
     "seadclub",

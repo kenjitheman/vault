@@ -1,64 +1,74 @@
-## Zig Programming Language
+- [Ziglang](#ziglang)
+- [Introduction](#introduction)
+- [History](#history)
+- [Features](#features)
+- [Code examples](#code-examples)
+- [Memory management](#memory-management)
+- [Code examples](#code-examples)
+- [Parallelism](#parallelism)
+- [Zig has built-in support for:](#zig-has-built-in-support-for)
+---
+## Ziglang
 ---
 ## Introduction
 ---
-- General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software, designed to be a system programming language.
-
-- Attempts to be a modern replacement for C, focused on safety, performance, and compile-time execution. 
-
-- Community-driven, it is developed in the open, and is a non-profit project, free to use under the MIT License. 
+- Загальнопризначена мова програмування та інструментарій для створення міцного, оптимального та повторно використовуваного програмного забезпечення, призначена бути мовою системного програмування.
 ---
+- Спрямована на те, щоб бути сучасною альтернативою мові C, з фокусом на безпеці, продуктивності та виконанні на етапі компіляції.
+---
+- Розвивається спільнотою, відбувається відкритий розробка і є некомерційним проектом, доступним для використання за ліцензією MIT.
+--
 ## History
 ---
-- Was created by Andrew Kelley, and the first commit was made on April 1, 2016. 
+- Створено Ендрю Келлі, перший коміт був здійснений 1 квітня 2016 року.
 
-- The first release was made on June 16, 2016. 
+- Перший реліз відбувся 16 червня 2016 року.
 
-- Andrew Kelley is the main developer of Zig, and the project is maintained by a community of contributors.
-
-- Before Zig was created, Andrew Kelley worked on the LDC project, a D compiler, and the Zig project was inspired by the LDC project. 
+- Ендрю Келлі - головний розробник Zig, а проект обслуговується спільнотою учасників.
 ---
-## Main features
+- Перш ніж був створений Zig, Ендрю Келлі працював над проектом LDC, компілятором мови D, і проект Zig був інспірований проектом LDC.
 ---
-- Safety
-
-- Performance
-
-- Debuggability
-
-- Cross-compilation 
-
-- No hidden control flow
-
-- No hidden allocation 
-
-- No macros 
+## Features
 ---
-- No header files 
+- Безпека
 
-- No dependencies 
+- Продуктивність
 
-- No runtime 
+- Можливість відлагодження
 
-- No garbage collector
+- Кроскомпіляція
 
-- No undefined behavior
+- Немає прихованого потоку управління
 
-- No global state 
+- Немає прихованого виділення пам'яті
+
+- Немає макросів
 ---
-## Code Examples
+- Немає файлів заголовків
+
+- Немає залежностей
+
+- Немає виконавчого середовища
+
+- Немає сбірника сміття
+
+- Немає невизначеної поведінки
+
+- Немає глобального стану
 ---
-### Hello World
+## Code examples
+---
+### Hello, World!
 ```zig
 const std = @import("std");
 
 pub fn main() void {
     const stdout = std.io.getStdOut().writer();
-    try stdout.print("Hello, {}!\n", .{"World"});
+    try stdout.print("Привіт, {}!\n", .{"світ"});
 }
 ```
 ---
-### Fibonacci
+### Fibonacci sequence
 ```zig
 const std = @import("std");
 
@@ -88,17 +98,17 @@ pub fn main() void {
 }
 ```
 ---
-## Memory Management
+## Memory management
 ---
-- Zig has no garbage collector, and no hidden allocations.
+- У Zig немає сбірника сміття та прихованих виділень пам'яті.
 
-- Memory management is done manually, and Zig has a built-in allocator.
+- Управління пам'яттю виконується вручну, і в Zig існує вбудований алокатор.
 
-- Zig has a built-in allocator, and it is possible to create custom allocators.
+- У Zig існує вбудований алокатор, і можливо створювати власні алокатори.
 ---
-## Code Examples
+## Code examples
 ---
-### Allocating Memory
+### Виділення пам'яті
 ```zig
 const std = @import("std");
 
@@ -109,9 +119,9 @@ pub fn main() void {
 }
 ```
 ---
-## Concurrency
+## Parallelism
 ---
-## Zig has built-in support for
+## Zig has built-in support for:
 ---
 - Async/await:
 
@@ -125,10 +135,10 @@ async fn sleep(ms: u64) void {
     }
 }
 
-async fn main() void { // async main function is allowed in Zig
+async fn main() void { // асинхронна головна функція допускається в Zig
     await sleep(1000);
     const stdout = std.io.getStdOut().writer();
-    try stdout.print("Hello, World!\n");
+    try stdout.print("Привіт, світе!\n");
 }
 ```
 ---
@@ -143,7 +153,7 @@ pub fn main() void {
     defer coroutine.destroy();
     coroutine.start(async {
         const stdout = std.io.getStdOut().writer();
-        try stdout.print("Hello, World!\n");
+        try stdout.print("Привіт, світе!\n");
     });
 }
 ```
@@ -175,6 +185,8 @@ pub fn main() void {
     mutex.lock();
     defer mutex.unlock();
 }
+
+
 ```
 ---
 - Semaphores:
@@ -190,7 +202,7 @@ pub fn main() void {
 }
 ```
 ---
-- Condition variables:
+- Умовні змінні:
 
 ```zig
 const std = @import("std");
@@ -230,7 +242,7 @@ pub fn main() void {
     defer thread_pool.destroy();
     thread_pool.spawn(async {
         const stdout = std.io.getStdOut().writer();
-        try stdout.print("Hello, World!\n");
+        try stdout.print("Привіт, світе!\n");
     });
 }
 ```
@@ -257,7 +269,7 @@ pub fn main() void {
 }
 ```
 ---
-- Thread scheduling:
+- Планування потоків:
 
 ```zig
 const std = @import("std");
@@ -265,13 +277,13 @@ const std = @import("std");
 pub fn main() void {
     const thread = std.Thread.init(async {
         const stdout = std.io.getStdOut().writer();
-        try stdout.print("Hello, World!\n");
+        try stdout.print("Привіт, світе!\n");
     });
     defer thread.join();
 }
 ```
 ---
-- Thread management:
+- Управління потоками:
 
 ```zig
 const std = @import("std");
@@ -279,7 +291,7 @@ const std = @import("std");
 pub fn main() void {
     const thread = std.Thread.init(async {
         const stdout = std.io.getStdOut().writer();
-        try stdout.print("Hello, World!\n");
+        try stdout.print("Привіт, світе!\n");
     });
     defer thread.join();
 }
